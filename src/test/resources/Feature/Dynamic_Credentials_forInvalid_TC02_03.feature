@@ -1,6 +1,6 @@
-Feature: Verify if user enter wrong or blank credentials
+Feature: Verify login page automation with wrong or blank credentials
 
-  Scenario Outline: Verify the login is success with Valid Login
+  Scenario Outline: Verify if user enter wrong or blank credentials
     Given User Navigate to website URL
     When  Enter "<Username>" and "<Password>"
     And   Click the Login Button
