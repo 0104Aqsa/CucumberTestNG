@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class TC02_03_Wrong_Blank_Credentials {
 
     @Given("User Navigate to website URL")
-    public void userOnWebsiteLink() {
+    public void UserNavigatetowebsiteURL() {
         BrowserHooks.driver.get("https://the-internet.herokuapp.com/login");
     }
 
@@ -19,12 +19,12 @@ public class TC02_03_Wrong_Blank_Credentials {
     }
 
     @And("Click the Login Button")
-    public void clickLoginButton() {
+    public void clicktheLoginButton() {
         BrowserHooks.driver.findElement(By.xpath("//button[@type='submit']")).click();
     }
 
     @Then("Login not succesfully and Error message is display")
-    public void loginFailed() {
+    public void LoginnotsuccesfullyandErrormessageisdisplay() {
         String msg = BrowserHooks.driver.findElement(By.xpath("//div[@id='flash']")).getText();
         System.out.println("🚫 Error Message: " + msg);
     }
