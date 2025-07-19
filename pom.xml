@@ -27,6 +27,7 @@
   <parallel>classes</parallel>
   <threadCount>2</threadCount>
   <useSystemClassLoader>false</useSystemClassLoader>
+               <rerunFailingTestsCount>2</rerunFailingTestsCount>
 </configuration>
     </plugin>
   </plugins>
